@@ -1,0 +1,32 @@
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+
+
+public class drawingLine extends JFrame {
+    public drawingLine(){
+        setTitle("Java Graphics");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setSize(500,500);
+        setVisible(true);
+        
+    } 
+public void paint(Graphics g){
+    super.paint(g);
+    g.setColor(Color.red);
+    g.drawLine(10, 30, 150, 30);
+    g.setFont(new Font("tahoma",Font.BOLD,10));
+    g.drawString("Welcome", 50, 50);
+    
+    
+    
+    
+}    
+public static void main(String[]args){
+    new drawingLine();
+}    
+}
+

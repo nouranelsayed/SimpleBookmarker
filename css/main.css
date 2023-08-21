@@ -1,0 +1,92 @@
+#body{
+    background-color: #f7ecde;;
+}
+
+
+#bigHead{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    position: relative;
+}
+
+#bigHead::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 5px;
+width: 250px;
+height: 10px;
+background-color:#f8cd4c;;
+z-index: -55555555;
+transition: all 1s;
+}
+#bigHead:hover:after{
+    height: 30px;
+    }
+
+    .top{
+        border-bottom: black dotted 2px;
+    }
+.form{
+    padding-bottom: 40px;
+    border-bottom: black dotted 2px;
+}
+.save_button{
+    background-color: #d1512d;
+    
+}
+.save_button:hover{
+    background-color: #b64425;
+    border: #000 1px;
+    
+}
+
+ 
+  /*Styling Bookmarks section*/
+  .bookmarks{
+    width: 100%;
+    background-color: #555555;
+    padding: 20px;
+  }
+  .bookmark{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    padding: 5px 20px;
+    background-color: #FAFAFA;
+    margin-bottom: 10px;
+    background-color:  #333333;
+  }
+  .bookmark span{
+    flex: 1;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #fff;
+  }
+  .bookmark .visit{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #47CF73;
+    color: #000;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  .bookmark .delete{
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #F44336;
+    border-radius: 5px;
+  }
+
+  .gradient-label {
+    background: linear-gradient(45deg, #00FF00, #0a5f0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
